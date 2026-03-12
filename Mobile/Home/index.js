@@ -13,15 +13,16 @@ export default function Home({ navigation }) {
 
   return (
     <View style={Estilo.container}>
-      <Image source={require("../assets/logo.png")} style={Estilo.Image} />
-      <Text style={Estilo.titulo}>Home</Text>
 
-      <TouchableOpacity style={Estilo.Button} onPress={AbrirTelaCadastroAluno}>
-        <Text style={Estilo.ButtonTexto}>Cadastro de Aluno</Text>
+      <Image source={require("../assets/logo.png")} style={Estilo.Image} />
+
+      <TouchableOpacity style={Estilo.ButtonText}
+      activeOpacity={0.7} onPress={AbrirTelaCadastroAluno}>
+        <Text style={Estilo.ButtonText} > Cadastro de Aluno</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={Estilo.Button} onPress={AbrirTelaCadastroTurma}>
-        <Text style={Estilo.ButtonTexto}>Cadastro de Turma</Text>
+      <TouchableOpacity style={Estilo.ButtonText} activeOpacity={0.7} onPress={AbrirTelaCadastroTurma}>
+        <Text style={Estilo.ButtonText}>Cadastro de Turma</Text>
       </TouchableOpacity>
     </View>
   );

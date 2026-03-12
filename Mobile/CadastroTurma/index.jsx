@@ -10,7 +10,6 @@ export default function CadastroTurma() {
 
   return (
     <View style={Estilo.container}>
-      {/* Nome da Turma */}
       <Text style={Estilo.Texto}>Nome da Turma</Text>
       <TextInput
         style={Estilo.input}
@@ -21,7 +20,6 @@ export default function CadastroTurma() {
         autoCapitalize="words"
       />
 
-      {/* Ano */}
       <Text style={Estilo.Texto}>Ano</Text>
       <TextInput
         style={Estilo.input}
@@ -32,7 +30,6 @@ export default function CadastroTurma() {
         keyboardType="numeric"
       />
 
-      {/* Curso */}
       <Text style={Estilo.Texto}>Curso</Text>
       <TextInput
         style={Estilo.input}
@@ -42,7 +39,6 @@ export default function CadastroTurma() {
         maxLength={100}
       />
 
-      {/* Turno */}
       <Text style={Estilo.Texto}>Turno</Text>
       <TextInput
         style={Estilo.input}
