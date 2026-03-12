@@ -69,10 +69,15 @@ export default function CadastroAluno(props) {
         boxStyles={Estilo.input}   // opcional: usa seu estilo no campo
       />
 
-
-
-            </View>
-
-            
+      {/* Endereço */}
+      <Text style={Estilo.Texto}>Endereço</Text>
+      <TextInput
+        style={Estilo.input}
+        placeholder="Digite o endereço do aluno"
+        value={endereco}
+        onChangeText={setEndereco}
+        maxLength={200}
+      />
+    </View>
   );
 }
