@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button, Platform } from "react-native";
+import { View, Text, TextInput, Button, Platform, Switch } from "react-native";
 import Estilo from "../Estilo";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { SelectList } from "react-native-dropdown-select-list";
+import TextoInput from "../Componentes/TextInput.jsx";
 
 export default function CadastroAluno(props) {
   const [nome, setNome] = useState("");
@@ -29,7 +30,7 @@ export default function CadastroAluno(props) {
 
   return (
     <View style={Estilo.container}>
-      {/* Nome */}
+     
       <Text style={Estilo.Texto}>Nome do Aluno</Text>
       <TextInput
         style={Estilo.input}
@@ -39,7 +40,7 @@ export default function CadastroAluno(props) {
         maxLength={100}
       />
 
-      {/* Data */}
+    
       <View style={Estilo.ViewHorizontal}>
         <Text style={Estilo.Texto}>Data</Text>
         <TextInput
@@ -57,19 +58,17 @@ export default function CadastroAluno(props) {
           display="default"
           onChange={onChange}
         />
-      )}
-
-      {/* Sexo */}
+      )
+      }
       <SelectList
         dropdownStyles={{ marginBottom: 20 }}
         data={dados}
         setSelected={setSexo}
-        save="key"                 // salva "M", "F" ou "O"
+        save="key"                
         placeholder="Selecione o sexo"
-        boxStyles={Estilo.input}   // opcional: usa seu estilo no campo
-      />
+        boxStyles={Estilo.input} 
 
-      {/* Endereço */}
+        />
       <Text style={Estilo.Texto}>Endereço</Text>
       <TextInput
         style={Estilo.input}
