@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
-import Estilo from "../Estilo"; 
+import Estilo from "../Estilo";
 
 export default function Home({ navigation }) {
   const AbrirTelaCadastroAluno = () => {
@@ -14,9 +13,7 @@ export default function Home({ navigation }) {
 
   return (
     <View style={Estilo.container}>
-
       <Image source={require("../assets/logo.png")} style={Estilo.Image} />
-      
       <Text style={Estilo.titulo}>Home</Text>
 
       <TouchableOpacity style={Estilo.Button} onPress={AbrirTelaCadastroAluno}>

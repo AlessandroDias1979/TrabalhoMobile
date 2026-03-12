@@ -20,12 +20,3 @@ export default function App() {
   );
 }
 
-/*Criar um novo APP que tenha um menu com uma tela de cadastro de aluno e outra tela de cadastro de turma.
-
-A tela de cadastro de Aluno deve poder cadastrar os  seguintes dados:
-
-Nome, Data de Nascimento , Sexo, Endereço
-
-A tela de Cadastro de Turma deve poder cadastrar os seguintes dados:
-
-Nome da Turma,  Ano,  Curso, Turno*/
