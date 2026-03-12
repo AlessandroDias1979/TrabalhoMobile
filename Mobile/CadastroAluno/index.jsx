@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { View, Text, TextInput, Button, Platform, Switch } from "react-native";
-import Estilo from "../Estilo";
+import { View, Alert, Text, TextInput, Button, Platform, Switch } from "react-native";
+import Estilo from '../Estilo';
+import { useState } from "react";
+import { MaskedTextInput } from "react-native-mask-text";
 import DateTimePicker from "@react-native-community/datetimepicker";
-import { SelectList } from "react-native-dropdown-select-list";
 import TextoInput from "../Componentes/TextInput.jsx";
+import { MultipleSelectList, SelectList } from "react-native-dropdown-select-list";
+
 
 export default function CadastroAluno(props) {
   const [nome, setNome] = useState("");
