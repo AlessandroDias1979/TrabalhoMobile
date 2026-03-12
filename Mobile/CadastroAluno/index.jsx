@@ -68,19 +68,18 @@ export default function CadastroAluno(props) {
                 placeholder="Selecione o sexo"
             />
 
+      <TextInput
+      label="Endereço"
+      Estilo={Estilo.input}
+      setcalor = {setEndereco}
+      textoaoiniciarl = "Digite o endereço do aluno"
+      value={endereco}
+      maxLength={200}
+      />
+
 
 
             </View>
 
             
   );
-
-  /*Criar um novo APP que tenha um menu com uma tela de cadastro de aluno e outra tela de cadastro de turma.
-
-A tela de cadastro de Aluno deve poder cadastrar os  seguintes dados:
-
-Nome, Data de Nascimento , Sexo, Endereço
-
-A tela de Cadastro de Turma deve poder cadastrar os seguintes dados:
-
-Nome da Turma,  Ano,  Curso, Turno*/
