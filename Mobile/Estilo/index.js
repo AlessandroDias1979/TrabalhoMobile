@@ -44,6 +44,17 @@ const styles = StyleSheet.create({
         margin: 10,
         width: 400,
         borderWidth: 1
+    },
+
+    Input2: {
+       margin: 10,
+       width: '50%',
+       borderWidth: 1  
+    },
+    ViewHorizontal : {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginTop: 10  
     }
 
 });

@@ -24,8 +24,41 @@ export default function CadastroTurma(props) {
         maxLength={100}
       />
 
-      <Text></Text>
+      <TextInput
+      label="Ano"
+      Estilo={Estilo.input}
+      setcalor = {setAno}
+      textoaoiniciarl = "Digite o ano da turma"
+      value={ano}
+      maxLength={4}
+      keyboardType="numeric"
+      />
 
-      
+      <TextInput
+      label="Curso"
+      Estilo={Estilo.input}
+      setcalor = {setCurso}
+      textoaoiniciarl = "Digite o curso da turma"
+      value={curso}
+      maxLength={100}
+      />
+
+      <TextInput
+      label="Turno"
+      Estilo={Estilo.input}
+      setcalor = {setTurno}
+      textoaoiniciarl = "Digite o turno da turma"
+      value={turno}
+      maxLength={50}
+      />
     </View>
   );
+  /*Criar um novo APP que tenha um menu com uma tela de cadastro de aluno e outra tela de cadastro de turma.
+
+A tela de cadastro de Aluno deve poder cadastrar os  seguintes dados:
+
+Nome, Data de Nascimento , Sexo, Endereço
+
+A tela de Cadastro de Turma deve poder cadastrar os seguintes dados:
+
+Nome da Turma,  Ano,  Curso, Turno*/

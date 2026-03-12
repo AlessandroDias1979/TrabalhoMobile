@@ -12,6 +12,21 @@ export default function CadastroAluno(props) {
  
   }
 
+  const onchange = (event, selectedDate ) => {
+        const currentDate = selectedDate || date;
+        setShow(Platform.OS === 'ios');
+        setDate(currentDate);
+    }
+
+    const abrirData = () => {
+        setShow(true);
+    }
+    const dados = [
+        {key: 'M', value:'Masculino'},
+        {key: 'F', value:'Feminino'},
+        {key: 'O', value:'Não Informado'}
+    ]
+
   return (
     <View style={Estilo?.container}>
     
@@ -26,6 +41,46 @@ export default function CadastroAluno(props) {
 
       <Text></Text>
 
-      
-    </View>
+      <View style={Estilo.ViewHorizontal}>
+                <Text style={Estilo.Texto}>Data</Text>            
+                <TextInput
+                    style={Estilo.Input2}
+                    editable={false}
+                    value={date.toLocaleDateString()}
+                />            
+                <Button onPress={abrirData} title="Selecionar Data" />
+            </View>
+
+            { show && (
+                    <DateTimePicker
+                        value = {date}
+                        mode = "date"
+                        display = "default"
+                        onChange={onchange}
+                    />
+                )
+            }
+             <SelectList
+                dropdownStyles={{marginBottom: 20}}
+                data={dados}
+                setSelected={setSexo}
+                save="key"
+                placeholder="Selecione o sexo"
+            />
+
+
+
+            </View>
+
+            
   );
+
+  /*Criar um novo APP que tenha um menu com uma tela de cadastro de aluno e outra tela de cadastro de turma.
+
+A tela de cadastro de Aluno deve poder cadastrar os  seguintes dados:
+
+Nome, Data de Nascimento , Sexo, Endereço
+
+A tela de Cadastro de Turma deve poder cadastrar os seguintes dados:
+
+Nome da Turma,  Ano,  Curso, Turno*/
