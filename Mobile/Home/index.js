@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
-import Estilo from "../Estilo"; // assumindo que Estilo é um StyleSheet export default
+import Estilo from "../Estilo"; 
 
 export default function Home({ navigation }) {
   const AbrirTelaCadastroAluno = () => {

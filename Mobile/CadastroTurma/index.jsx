@@ -16,7 +16,7 @@ export default function CadastroTurma(props) {
   }
 
   return (
-    <View style={Estilo?.container}>
+    <View style={Estilo.container}>
     
       <TextInput
         label="Nome do Turma"
