@@ -9,7 +9,10 @@ import { MultipleSelectList, SelectList } from "react-native-dropdown-select-lis
 export default function CadastroTurma(props) {
 
     const [nome, setNome] = useState("");
- 
+    const [ano, setAno] = useState("");
+    const [curso, setCurso] = useState("");
+    const [turno, setTurno] = useState("");
+    
   }
 
   return (

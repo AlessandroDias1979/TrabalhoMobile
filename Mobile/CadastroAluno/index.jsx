@@ -9,8 +9,12 @@ import { MultipleSelectList, SelectList } from "react-native-dropdown-select-lis
 export default function CadastroAluno(props) {
 
     const [nome, setNome] = useState("");
- 
-  }
+    const [endereco, setEndereco] = useState("");
+    const [date, setDate] = useState(new Date());
+    const [show, setShow] = useState(false);
+    const [sexo, setSexo] = useState("");
+
+    
 
   const onchange = (event, selectedDate ) => {
         const currentDate = selectedDate || date;
@@ -26,6 +30,8 @@ export default function CadastroAluno(props) {
         {key: 'F', value:'Feminino'},
         {key: 'O', value:'Não Informado'}
     ]
+
+  }
 
   return (
     <View style={Estilo?.container}>
