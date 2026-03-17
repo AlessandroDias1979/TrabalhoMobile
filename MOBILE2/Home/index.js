@@ -13,6 +13,11 @@ export default function Home(props){
 
     return(
         <View style={Estilo.container}>
+
+                <Image 
+                source={require('../assets/logo.png')}
+                style={Estilo.imagemLogo}
+                />
         
         <TouchableOpacity style={Estilo.Button} activeOpacity={0.7} onPress={AbrirTelaAluno}>
             <Text style={Estilo.ButtonText}>Aluno</Text>    

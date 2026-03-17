@@ -8,7 +8,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     imagem : {
-        width: 300,
+        width: 50,
+        height: 50,
+        resizeMode: 'contain',
+        margin: 10
+    },
+
+    imagemLogo : {
+        width: 200,
         height: 200,
         resizeMode: 'contain',
         margin: 10
@@ -35,18 +42,27 @@ const styles = StyleSheet.create({
     },
     Input: {
        margin: 10,
-       width: 400,
+       padding: 10,
+       width: 300,
+       color: '#8a8a8a',
        borderWidth: 1  
     },
     Input2: {
        margin: 10,
        width: '50%',
-       borderWidth: 1  
+       borderWidth: 2  
     },
     ViewHorizontal : {
-      flexDirection: 'row',
+      flexDirection: 'column',
       alignItems: 'center',
       marginTop: 10  
+    },
+    InputCEP:{
+        margin: 10,
+        padding: 10,
+        width: 100,
+        color: '#8a8a8a',
+        borderWidth: 1
     }
 });
 
