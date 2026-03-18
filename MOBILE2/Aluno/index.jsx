@@ -62,8 +62,6 @@ export default function Aluno(props){
 
     return(
 
-        
-
             <View style={Estilo.container}>
 
                 <Text style={Estilo.Texto}>Cadastro de Aluno</Text>
